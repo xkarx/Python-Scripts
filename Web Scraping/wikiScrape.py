@@ -1,6 +1,6 @@
 # This script scrapes the headings,links and tables from a given wikipedia link
 
-# Before importing, open the terminal instal the packages
+# Before importing, open the terminal and install the packages
 # pip install --user bs4
 # python -m pip install --user requests
 # python -m pip install --user lxml
@@ -52,7 +52,6 @@ print(all_tables)
 
 right_table = soup.find('table', class_='wikitable sortable jquery-tablesorter')
 print(right_table)
-print("h--------------------------------------------------------------------------------------------------------")
 
 table_links = right_table.findAll('a')  #.find_all('a', href=True)
 print(table_links)
